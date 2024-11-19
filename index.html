@@ -1,0 +1,85 @@
+"Laboratorio 11"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+let ejercicio = prompt("Indique el ejercicio que desea revisar")
+
+if (ejercicio == 1) {
+
+/*Ejercicio Código de ejemplos de condicionales if-Else del pdf Sesion 11.*/
+        
+        let nota = prompt("Por favor digite un número");
+        /*let nota = 85;*/
+        if (nota >= 90 && nota < 100) {
+            document.write(" - Excelente");
+        } else if (nota >= 80 && nota < 90) {
+            document.write(" - Muy bien");
+        } else if (nota >= 70 && nota < 80) {
+            document.write(" - Bien");
+        } else if (nota >= 60 && nota < 70) {
+            document.write(" - Suficiente");
+        } else {
+            document.write(" - Insuficiente");
+        }
+
+    }
+
+else if (ejercicio == 2) {
+
+    let edad = prompt("Por favor ingrese su edad ");
+
+if (edad > 17) {
+    document.write("Es mayor de edad");
+
+    /*edad > 0 && edad < 18*/
+} else if (0 < edad < 18) {
+    document.write("Es menor de edad");
+} else {
+    document.write("Ha ingresado un número inválido");
+}    
+
+}
+
+else if (ejercicio == 3) {
+
+    let numero = prompt("Por favor digite un número");
+        
+        if (numero % 2 == 0) {
+            document.write("El numero ", numero, " es par");
+        } else {
+            document.write("<br>", "<br>", "El número ", numero, " es impar");
+        }
+    }
+
+    else {
+
+    /*Ejercicio 1: (30 minutos) Verificación de Calificaciones
+- Escribe un programa que solicite al usuario ingresar una calificación numérica entre 0
+y 100.
+- Si la calificación es mayor o igual a 90, muestra el mensaje "Aprobado con honores".
+- Si la calificación es mayor o igual a 70 pero menor a 90, muestra el mensaje "Aprobado".
+- Si la calificación es menor a 70, muestra el mensaje "Reprobado".*/
+        
+let nota = prompt("ingrese la nota");
+        if (nota > 90) {
+            document.write("<br>", "Aprobado con honores con ", nota);
+        }else if (nota >= 70 && nota < 90) {
+            document.write("<br>", "Aprobado con ", nota);
+        }else {
+            document.write("<br>", "Reprobado con ", nota);
+        }         
+
+    }
+    </script>
+
+</body>
+</html>
